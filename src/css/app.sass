@@ -1,0 +1,115 @@
+// app global css in Sass form
+$padding_desctop : 10rem
+$padding_ipad : 4rem
+$padding_mobile : 1rem
+body
+  letter-spacing: 1px
+.q-header
+  background: rgba(0,0,0,.8)!important
+.q-footer
+  background: rgba(43, 15, 72, .9)!important
+  padding: $padding_mobile
+  background: none
+  @media (min-width: 768px)
+    padding: 2rem $padding_ipad
+  @media (min-width: 1200px)
+    padding: 2rem $padding_desctop
+  img
+    height: 2rem
+.q-toolbar
+  padding: 0 $padding_mobile
+  background: none
+  @media (min-width: 768px)
+    padding: 0 $padding_ipad
+  @media (min-width: 1200px)
+    padding: 0 $padding_desctop
+
+  .q-bar
+    padding: 0
+    div
+      font-size: 1.2rem
+      a
+        text-decoration: none
+        color: inherit
+        &:hover
+          color: $secondary
+        &.active
+          color: $secondary
+          border-bottom: 1px solid $secondary
+          font-weight: bold
+section
+  padding-bottom: 8rem
+.kontakt-page, .Beitraege-page, .team-page, .videos-page, .ueberuns-page
+  section
+    padding: 1rem $padding_mobile
+    @media (min-width: 768px)
+      padding: 3rem $padding_ipad
+    @media (min-width: 1200px)
+      padding: 3rem $padding_desctop
+
+.q-page
+  background-image: linear-gradient(to top, #2b0f48, #000)
+  padding-top: 65px!important
+  min-height: 100vh!important
+  .header-section
+    min-height: 90vh
+    &__top
+      background: url("../assets/header-bg.jpg") center no-repeat
+      background-size: cover
+      padding: 5rem $padding_mobile
+      @media (min-width: 768px)
+        padding: $padding_ipad
+      @media (min-width: 1200px)
+        padding: 10rem $padding_desctop
+      div
+        width: max-content
+    &__bottom
+      margin-top: -4rem
+      padding: $padding_mobile
+      @media (min-width: 768px)
+        margin-top: -6rem
+        padding: $padding_ipad
+      @media (min-width: 1200px)
+        margin-top: -16rem
+        padding: 10rem $padding_desctop 10rem
+      .header-persone
+        background: url("../assets/singer.jpg") center no-repeat
+        background-size: cover
+        min-height: 25rem
+        @media (max-width: 1024px)
+          min-height: 20rem
+        div.row
+          padding: $padding_mobile
+          background-image: linear-gradient(to bottom, rgba(43, 15, 72, .2), #000)
+
+.q-page-container
+  padding-top: 0!important
+.party
+  background: url("../assets/singer.jpg") center no-repeat
+  background-size: cover
+  min-height: 25rem
+  @media (max-width: 1024px)
+    min-height: 20rem
+  &-text
+    padding: $padding_mobile
+    background-image: linear-gradient(to bottom, rgba(43, 15, 72, .2), #000)
+    p
+      max-width: 70%
+.popular-section
+  padding: $padding_mobile
+  @media (min-width: 768px)
+    padding: $padding_ipad
+  @media (min-width: 1200px)
+    padding: 10rem $padding_desctop 10rem
+.kontakt-link
+  border: 1px solid $secondary
+  padding: .5rem 1rem
+  color: $secondary!important
+  &:hover
+    background-color: $secondary
+    color: white!important
+.q-drawer
+  background-image: linear-gradient(to top, #2b0f48, #000)
+  a
+    text-decoration: none
+    color: inherit
